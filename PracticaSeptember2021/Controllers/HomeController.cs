@@ -25,6 +25,11 @@ namespace PracticaSeptember2021.Controllers
             return View("Index", Static_Class.result);
         }
 
+        public IActionResult Listing()
+        {           
+            return View("Listing",Static_List.MyList);
+        }
+
         public IActionResult Privacy()
         {
             return View();
