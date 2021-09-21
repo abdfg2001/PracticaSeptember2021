@@ -30,6 +30,12 @@ namespace PracticaSeptember2021.Controllers
             return View("Listing",Static_List.MyList);
         }
 
+        [HttpPost]
+        public IActionResult Fill_List(string id)
+        {
+            Static_List.MyList.Add(id);
+            return View("Listing", Static_List.MyList);
+        }
         public IActionResult Privacy()
         {
             return View();

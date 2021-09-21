@@ -1,8 +1,13 @@
 ﻿@model List<string>;
 
 <br />
-@foreach (var item in Model)
-{
-    <h1>@item</h1>
-}
+<form method="post" action="Fill_List">
+    Add a word: <input type="text" name="id" />
+    <input type="submit" value="Add" />
+</form>
 <br />
+    @foreach (var item in Model)
+    {
+        <h1>@item</h1>
+    }
+    <br />
