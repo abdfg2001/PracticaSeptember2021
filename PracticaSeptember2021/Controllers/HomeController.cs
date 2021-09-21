@@ -20,7 +20,9 @@ namespace PracticaSeptember2021.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Interface_Class Plate = new Animal();
+            Plate.Cook();
+            return View("Index", Static_Class.result);
         }
 
         public IActionResult Privacy()
